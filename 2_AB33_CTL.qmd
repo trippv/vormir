@@ -1,0 +1,90 @@
+---
+title: "Contraste AB30 vs Control"
+author: "integrity data"
+execute:
+  echo: false
+format: html
+---
+
+
+
+```{r}
+library(Glimma)
+library(edgeR)
+
+
+# open counts
+
+# crear nombre de muestras
+samples <- c("AB33_1", "AB33_2", "AB33_3",
+             "AB30_1", "AB30_2", "AB30_3",
+             "PAU33_1", "PAU33_2", "PAU33_3",
+             "PAU30_1", "PAU30_2", "PAU30_3",
+             "CTL_1", "CTL_2", "CTL_3")
+
+abundancia <- read.table("test_data/RSEM.isoform.counts.matrix",
+                         sep = "\t", header = TRUE, row.names = 1)
+abundancia <- as.matrix(abundancia)
+
+
+
+colnames(abundancia) <- samples
+
+
+condicion <- gsub("*_.", "", samples)
+replica <- gsub(".*_", "", samples)
+
+colData <- data.frame(samples = samples,
+                      condicion = condicion,
+                      replica = replica)
+
+rownames(colData) <- samples
+
+
+# Crear el objeto DGEList
+dge <- DGEList(counts=abundancia, group=colData$condicion)
+
+# Filtrado de genes con baja expresión
+keep <- filterByExpr(dge)
+dge <- dge[keep, , keep.lib.sizes=FALSE]
+
+# Normalización de los datos
+dge <- calcNormFactors(dge)
+```
+
+
+
+```{r}
+
+# Diseño experimental
+design <- model.matrix(~0 + as.factor(colData$condicion))
+colnames(design) <- levels(as.factor(condicion))
+
+# Estimar la dispersión
+dge <- estimateDisp(dge, design)
+
+# Ajuste del modelo lineal generalizado
+fit <- glmQLFit(dge, design)
+
+# Comparaciones específicas
+comparisons <- list(
+  AB33_vs_CTL = makeContrasts(AB33 - CTL, levels=design),
+  AB30_vs_CTL = makeContrasts(AB30 - CTL, levels=design),
+  PAU33_vs_CTL = makeContrasts(PAU33 - CTL, levels=design),
+  PAU30_vs_CTL = makeContrasts(PAU30 - CTL, levels=design)
+)
+
+```
+
+
+# AB33 vs Control 
+
+```{r}
+
+glrt <- glmLRT(fit, design, contrast = comparisons$AB33_vs_CTL)
+
+glrt$comparison <- c("AB33", "Control")
+
+
+glimmaVolcano(glrt, dge = dge)
+```

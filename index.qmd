@@ -1,0 +1,42 @@
+---
+title: "Proyecto de RNAseq"
+about:
+  id: hero-heading
+  template: solana
+  image: images/logo.png
+
+---
+
+
+:::{#hero-heading}
+
+Esta es una descripción del análisis 
+
+:::
+
+## Muestras
+
+
+
+| Muestra   | DEscripcion   |     |
+|-----------|---------------|-----|
+| muestra1  | descripcion 1 |     |
+| muestra 2 | descripcion 2 |     |
+|           |               |     |
+
+: Grupos experimentales
+
+
+
+## Secciones:
+
+
+[Reporte de calidad de lecturas crudas](multiqc_report.html)
+
+[Análisis Multivariado](1_MDS.qmd)
+
+[Contraste AB33 vs Control](2_AB33_CTL.qmd)
+
+
+
+

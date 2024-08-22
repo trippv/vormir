@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "ExpresionDiferencial.html",
+    "href": "ExpresionDiferencial.html",
+    "title": "Resultados de Expresión Diferencial",
+    "section": "",
+    "text": "Exploración de expresion diferencial\n\n\nWarning: package 'lorem' was built under R version 4.3.3\n\n\nAdipiscing massa tortor porta sem, rhoncus magna convallis, viverra odio lobortis bibendum vulputate. Velit quis malesuada nisl rhoncus: dapibus suscipit! Blandit congue non sodales tristique at himenaeos. Maecenas nisi egestas rhoncus quis nunc cursus lobortis sociosqu potenti vitae mi ante. Sociosqu urna fames nec nulla – eleifend, penatibus porttitor sed natoque aptent placerat. Id potenti blandit nibh ornare donec justo dictum taciti in montes erat.\nDolor a vitae cras imperdiet libero vulputate bibendum accumsan. Sem sem massa nascetur fermentum aptent, posuere risus eleifend. Lacinia ad sociosqu cubilia erat donec. Erat pulvinar nunc, convallis conubia eu cras convallis tortor ridiculus. Tristique id augue semper venenatis porttitor – euismod sed nostra sagittis litora. Dignissim sapien nisi lectus aliquam; primis feugiat nec orci quisque semper per semper purus platea hendrerit inceptos nostra.\n\n\n\n\nDescripción\nnullam dictumst sed velit a dictum venenatis integer ridiculus donec mi suspendisse pellentesque leo facilisis id cursus feugiat feugiat torquent placerat nam imperdiet senectus metus semper sagittis platea arcu cum lobortis velit phasellus vulputate fermentum primis ac dictumst proin fames semper etiam tempor eleifend diam nullam ornare nisi interdum accumsan felis vulputate cubilia vivamus netus curae consequat nibh id neque pharetra himenaeos pharetra suspendisse at at quis congue venenatis praesent nisi augue dictumst enim iaculis lobortis gravida laoreet urna ullamcorper tristique ac taciti consequat velit maecenas enim lacinia facilisi conubia in scelerisque auctor morbi maecenas facilisis varius platea dui duis\n\n\nLoading required package: limma\n\n\n\n\nMDS plot\n\n\n\n\n\n\n\n\nAB33 vs Control\n\n\nWarning in buildXYData(table, status, main, display.columns, anno, counts, :\ncount transform requested but not all count values are integers."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018\n\n \n  \n   \n  \n    \n     twitter\n  \n  \n    \n     Github"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Proyecto de RNAseq",
+    "section": "",
+    "text": "Esta es una descripción del análisis"
+  },
+  {
+    "objectID": "index.html#descripción-del-proyecto",
+    "href": "index.html#descripción-del-proyecto",
+    "title": "Proyecto de RNAseq",
+    "section": "Descripción del proyecto",
+    "text": "Descripción del proyecto\n\nGrupos experimentales\n\n\nMuestra\nDEscripcion\n\n\n\n\n\nmuestra1\ndescripcion 1\n\n\n\nmuestra 2\ndescripcion 2\n\n\n\n\n\n\n\n\n\nSe realizó el análisis de expresión diferencial siguiendo el siguiente flujo de trabajo\nControl de calidad de las muestras crudas\nResultados de expresión diferencial\nhola ir a otra seccion"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "University of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  },
+  {
+    "objectID": "1_MDS.html",
+    "href": "1_MDS.html",
+    "title": "Análisis multivariado",
+    "section": "",
+    "text": "MDS plot"
+  },
+  {
+    "objectID": "index.html#muestras",
+    "href": "index.html#muestras",
+    "title": "Proyecto de RNAseq",
+    "section": "Muestras",
+    "text": "Muestras\n\nGrupos experimentales\n\n\nMuestra\nDEscripcion\n\n\n\n\n\nmuestra1\ndescripcion 1\n\n\n\nmuestra 2\ndescripcion 2"
+  },
+  {
+    "objectID": "index.html#secciones",
+    "href": "index.html#secciones",
+    "title": "Proyecto de RNAseq",
+    "section": "Secciones:",
+    "text": "Secciones:\nReporte de calidad de lecturas crudas\nAnálisis Multivariado\nContraste AB33 vs Control"
+  },
+  {
+    "objectID": "2_AB33_CTL.html",
+    "href": "2_AB33_CTL.html",
+    "title": "Contraste AB30 vs Control",
+    "section": "",
+    "text": "Loading required package: limma\n\n\n\nAB33 vs Control\n\n\nWarning in buildXYData(table, status, main, display.columns, anno, counts, :\ncount transform requested but not all count values are integers."
+  }
+]

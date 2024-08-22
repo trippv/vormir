@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "dashboard_site",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "ExpresionDiferencial.html",
+    "href": "ExpresionDiferencial.html",
+    "title": "Resultados de Expresión Diferencial",
+    "section": "",
+    "text": "Exploración de expresion diferencial\n\n\nWarning: package 'lorem' was built under R version 4.3.3\n\n\nLorem aptent tortor gravida volutpat dapibus penatibus ullamcorper cras ridiculus facilisis neque nisi, ridiculus morbi. Viverra phasellus libero consequat; sed vel sagittis, velit sollicitudin porta? Vehicula duis etiam; dapibus luctus, sodales arcu malesuada vel blandit! Nullam malesuada et pulvinar magna viverra nascetur torquent!\nSit imperdiet varius platea elementum semper in accumsan feugiat. Sed phasellus, massa risus id nibh malesuada? Vehicula donec eros gravida aliquam blandit leo tellus leo iaculis! Turpis nullam sem eget mus tristique libero, faucibus risus potenti dui. Orci aliquet blandit faucibus, et commodo tristique blandit rutrum. Ullamcorper dapibus dictumst rhoncus tempor, diam sodales, sem metus auctor! Metus aliquam nascetur potenti, accumsan dictum maecenas purus primis, varius rhoncus vestibulum, semper lacinia id conubia ut commodo.\n\n\n\n\nDescripción\nnullam dictumst sed velit a dictum venenatis integer ridiculus donec mi suspendisse pellentesque leo facilisis id cursus feugiat feugiat torquent placerat nam imperdiet senectus metus semper sagittis platea arcu cum lobortis velit phasellus vulputate fermentum primis ac dictumst proin fames semper etiam tempor eleifend diam nullam ornare nisi interdum accumsan felis vulputate cubilia vivamus netus curae consequat nibh id neque pharetra himenaeos pharetra suspendisse at at quis congue venenatis praesent nisi augue dictumst enim iaculis lobortis gravida laoreet urna ullamcorper tristique ac taciti consequat velit maecenas enim lacinia facilisi conubia in scelerisque auctor morbi maecenas facilisis varius platea dui duis\n\n\nLoading required package: limma\n\n\n\n\nMDS plot\n\n\n\n\n\n\n\n\nAB33 vs Control\n\n\nWarning in buildXYData(table, status, main, display.columns, anno, counts, :\ncount transform requested but not all count values are integers."
+  }
+]
