@@ -7,8 +7,6 @@ execute:
 format: html
 ---
 
-
-
 ```{r}
 library(Glimma)
 library(edgeR)
@@ -53,8 +51,6 @@ dge <- dge[keep, , keep.lib.sizes=FALSE]
 dge <- calcNormFactors(dge)
 ```
 
-
-
 ```{r}
 
 # Diseño experimental
@@ -77,9 +73,7 @@ comparisons <- list(
 
 ```
 
-
-
-#  MDS plot 
+# MDS plot
 
 ```{r}
 
@@ -87,4 +81,3 @@ glimmaMDS(dge)
 
 
 ```
-
