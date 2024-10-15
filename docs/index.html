@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Proyecto de RNAseq – Reporte</title>
+<title>Proyecto de RNAseq – Reporte RNAseq</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="./images/logo.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Reporte</span>
+    <span class="navbar-title">Reporte RNAseq</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -94,18 +94,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">Finley Malloc</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="1d1bc292ab15409ed18e8fc776462d59" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Nota</strong> - Esta es una versión interactiva del reporte NOMBRE_DEL_REPORTE.pdf</p>
+  <div id="quarto-announcement" data-announcement-id="256b29dcc629befade35db6679869941" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Nota</strong> - Este es un reporte de demostración con un contraste ilustrativo</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -117,8 +113,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#muestras" id="toc-muestras" class="nav-link active" data-scroll-target="#muestras">Muestras</a></li>
-  <li><a href="#secciones" id="toc-secciones" class="nav-link" data-scroll-target="#secciones">Secciones:</a></li>
+  <li><a href="#flujo-de-trabajo" id="toc-flujo-de-trabajo" class="nav-link active" data-scroll-target="#flujo-de-trabajo">Flujo de trabajo</a></li>
+  <li><a href="#muestras" id="toc-muestras" class="nav-link" data-scroll-target="#muestras">Muestras</a></li>
+  <li><a href="#secciones" id="toc-secciones" class="nav-link" data-scroll-target="#secciones">Secciones:</a>
+  <ul class="collapse">
+  <li><a href="#análisis-multivariado" id="toc-análisis-multivariado" class="nav-link" data-scroll-target="#análisis-multivariado">Análisis Multivariado</a></li>
+  <li><a href="#contraste-ab33-vs-control" id="toc-contraste-ab33-vs-control" class="nav-link" data-scroll-target="#contraste-ab33-vs-control">Contraste AB33 vs Control</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -139,7 +140,6 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header> 
       <div class="about-contents"><div id="hero-heading">
-<p>Esta es una descripción del análisis</p>
 </div></div>
     </div>
     <img src="images/logo.png" class="about-image
@@ -147,6 +147,16 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 
+<p>Resultados de análisis de lecturas de RNAseq y expresión diferencial en organismo no modelo sin genóma de referencia.</p>
+<section id="flujo-de-trabajo" class="level2">
+<h2 data-anchor-id="flujo-de-trabajo">Flujo de trabajo</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rnaseq_pipe.png" class="img-fluid figure-img"></p>
+<figcaption>rnaseq pipeline</figcaption>
+</figure>
+</div>
+</section>
 <section id="muestras" class="level2">
 <h2 data-anchor-id="muestras">Muestras</h2>
 <table class="caption-top table">
@@ -154,19 +164,19 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Muestra</th>
-<th>DEscripcion</th>
+<th>Descripcion</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>muestra1</td>
-<td>descripcion 1</td>
+<td>Ctrl</td>
+<td>Muestra control</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>muestra 2</td>
-<td>descripcion 2</td>
+<td>AB33</td>
+<td>Muestra experimental</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -179,12 +189,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="secciones" class="level2">
 <h2 data-anchor-id="secciones">Secciones:</h2>
-<p><a href="multiqc_report.html">Reporte de calidad de lecturas crudas</a></p>
-<p><a href="./1_MDS.html">Análisis Multivariado</a></p>
-<p><a href="./2_AB33_CTL.html">Contraste AB33 vs Control</a></p>
+<section id="análisis-multivariado" class="level3">
+<h3 data-anchor-id="análisis-multivariado"><a href="./1_MDS.html">Análisis Multivariado</a></h3>
+</section>
+<section id="contraste-ab33-vs-control" class="level3">
+<h3 data-anchor-id="contraste-ab33-vs-control"><a href="./2_AB33_CTL.html">Contraste AB33 vs Control</a></h3>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -611,20 +624,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/">
-      <i class="bi bi-twitter" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>

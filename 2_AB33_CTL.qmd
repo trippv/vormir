@@ -1,14 +1,17 @@
 ---
 title: "Contraste AB30 vs Control"
-author: "integrity data"
 execute:
   echo: false
+  warning: false
+  
 format: html
 ---
 
-
-
 ```{r}
+#| message: false
+#| warning: false
+
+
 library(Glimma)
 library(edgeR)
 
@@ -52,10 +55,9 @@ dge <- dge[keep, , keep.lib.sizes=FALSE]
 dge <- calcNormFactors(dge)
 ```
 
-
-
 ```{r}
-
+#| message: false
+#| warning: false
 # Diseño experimental
 design <- model.matrix(~0 + as.factor(colData$condicion))
 colnames(design) <- levels(as.factor(condicion))
@@ -76,11 +78,17 @@ comparisons <- list(
 
 ```
 
+# AB33 vs Control
 
-# AB33 vs Control 
+Resultados de expresión diferencial entre el contraste `AB33` y `Control`.
+
+Seleccione uno o varios punto del heatmap o de la tabla para desplear los niveles de expressión de ese gen. 
+
+Puede exportar la tabla con los genes seleccionados. 
 
 ```{r}
-
+#| message: false
+#| warning: false
 glrt <- glmLRT(fit, design, contrast = comparisons$AB33_vs_CTL)
 
 glrt$comparison <- c("AB33", "Control")

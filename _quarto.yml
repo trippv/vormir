@@ -7,25 +7,25 @@ website:
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "**Nota** - Esta es una versión interactiva del reporte NOMBRE_DEL_REPORTE.pdf"
+    content: "**Nota** - Este es un reporte de demostración con un contraste ilustrativo"
     type: primary
     position: below-navbar
   
   page-footer: 
     left: "2024, Integrity Data" 
-    right: 
-      - icon: github
-        href: https://github.com/
-      - icon: twitter 
-        href: https://twitter.com/ 
+    # right: 
+    #   - icon: github
+    #     href: https://github.com/
+    #   - icon: twitter 
+    #     href: https://twitter.com/ 
   
-  title: "Reporte"
+  title: "Reporte RNAseq"
   navbar:
     logo: images/logo.png
     left:
       - href: index.qmd
         text: Inicio
-      - about.qmd
+
 
 format:
   html:
